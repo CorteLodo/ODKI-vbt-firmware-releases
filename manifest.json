@@ -1,5 +1,5 @@
 {
-  "version": "3.1.4",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.1.4_OTA.zip",
-  "notes": "Anti-bounce debounce"
+  "version": "3.7.0",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.7.0_OTA.zip",
+  "notes": "Change logic"
 }
