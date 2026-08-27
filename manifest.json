@@ -1,5 +1,5 @@
 {
-  "version": "3.10.0",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.0_OTA.zip",
-  "notes": "Phase-detection engine replaced entirely: rep boundaries are now anchored to confirmed stillness events (ZUPT) instead of velocity-threshold crossings, fixing systematic truncation on slow reps and double-dip artifacts in the eccentric phase. Eccentric peak/mean velocity are now reported alongside every rep. Requires the matching app update (v3.10.0) - the Bluetooth protocol changed."
+  "version": "3.10.1",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.1_OTA.zip",
+  "notes": "Bugfix patch on 3.10.0: the live velocity graph now shows the eccentric phase going negative instead of a flat line (was clamped to 0 outside the concentric phase). Also hardens the per-rep quality1 kinematic check against a possible NaN edge case. No protocol changes - safe to update from 3.10.0 without an app update."
 }
