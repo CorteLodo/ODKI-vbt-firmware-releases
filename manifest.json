@@ -1,5 +1,5 @@
 {
-  "version": "3.9.3",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.9.3_OTA.zip",
-  "notes": "Fixed touch-and-go zero-crossing baseline: the 3.9.2 fix could trigger too early (right at the start of the return wait, before the true descent) when a rep closed via the flatness guard, still under-reporting peak/mean velocity on touch-and-go reps. Now requires a confirmed drop below zero before capturing the true kinematic turnaround point."
+  "version": "3.10.0",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.0_OTA.zip",
+  "notes": "Phase-detection engine replaced entirely: rep boundaries are now anchored to confirmed stillness events (ZUPT) instead of velocity-threshold crossings, fixing systematic truncation on slow reps and double-dip artifacts in the eccentric phase. Eccentric peak/mean velocity are now reported alongside every rep. Requires the matching app update (v3.10.0) - the Bluetooth protocol changed."
 }
