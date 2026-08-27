@@ -1,5 +1,5 @@
 {
-  "version": "3.9.1",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.9.1_OTA.zip",
-  "notes": "Reduced accelerometer/gyroscope range for better resolution (less integration drift). Fixed 3.9.0 OTA package (was source code, not a real DFU package)."
+  "version": "3.9.2",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.9.2_OTA.zip",
+  "notes": "Fixed touch-and-go rep measurements: reps started without a full pause were reporting peak/mean velocity 30-70% lower than identical reps started from a stop, because the baseline used to measure the rep started at the open threshold (~0.2 m/s) instead of the true kinematic turnaround point."
 }
