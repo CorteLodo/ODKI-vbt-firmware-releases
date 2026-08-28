@@ -1,5 +1,5 @@
 {
-  "version": "3.10.3",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.3_OTA.zip",
-  "notes": "Fixes rep-end reports sometimes arriving late or not at all over Bluetooth, even though the phase detection itself was correct. Caused by a blocking Bluetooth acknowledgement wait with no timeout, which could freeze sensor sampling entirely if the phone was slow to respond - more likely to happen after v3.10.2, where several reps can complete back-to-back. No app update required - firmware-only fix."
+  "version": "3.10.4",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.4_OTA.zip",
+  "notes": "Fixes eccentric-phase data (velocity, displacement) being silently lost on dead-stop style reps - most noticeable on deadlifts, where the bar genuinely rests on the floor between reps. The descent was being discarded when the pause happened before the next pull began. No app update required - firmware-only fix."
 }
