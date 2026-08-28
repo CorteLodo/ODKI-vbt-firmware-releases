@@ -1,5 +1,5 @@
 {
-  "version": "3.10.1",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.1_OTA.zip",
-  "notes": "Bugfix patch on 3.10.0: the live velocity graph now shows the eccentric phase going negative instead of a flat line (was clamped to 0 outside the concentric phase). Also hardens the per-rep quality1 kinematic check against a possible NaN edge case. No protocol changes - safe to update from 3.10.0 without an app update."
+  "version": "3.10.2",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.2_OTA.zip",
+  "notes": "Fixes two real bugs found from a user-captured device log: quality1 always showing 0 in the app (was reading the wrong field - no firmware change needed for this part, requires the matching v3.10.2 app update) and reps being silently dropped during continuous/fast sets where the sensor never fully settles between reps (a segment could contain several reps but only the highest peak was reported - now every rep in a segment is detected and reported). Update both firmware and app together."
 }
