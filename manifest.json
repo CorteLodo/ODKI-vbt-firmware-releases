@@ -1,5 +1,5 @@
 {
-  "version": "3.10.2",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.2_OTA.zip",
-  "notes": "Fixes two real bugs found from a user-captured device log: quality1 always showing 0 in the app (was reading the wrong field - no firmware change needed for this part, requires the matching v3.10.2 app update) and reps being silently dropped during continuous/fast sets where the sensor never fully settles between reps (a segment could contain several reps but only the highest peak was reported - now every rep in a segment is detected and reported). Update both firmware and app together."
+  "version": "3.10.3",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.3_OTA.zip",
+  "notes": "Fixes rep-end reports sometimes arriving late or not at all over Bluetooth, even though the phase detection itself was correct. Caused by a blocking Bluetooth acknowledgement wait with no timeout, which could freeze sensor sampling entirely if the phone was slow to respond - more likely to happen after v3.10.2, where several reps can complete back-to-back. No app update required - firmware-only fix."
 }
