@@ -1,5 +1,5 @@
 {
-  "version": "3.10.4",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.4_OTA.zip",
-  "notes": "Fixes eccentric-phase data (velocity, displacement) being silently lost on dead-stop style reps - most noticeable on deadlifts, where the bar genuinely rests on the floor between reps. The descent was being discarded when the pause happened before the next pull began. No app update required - firmware-only fix."
+  "version": "3.10.5",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.5_OTA.zip",
+  "notes": "Fixes velocity being zeroed too early on explosive reps (deadlifts especially) - a real residual velocity right after the peak (the natural coast to lockout) could get wiped to zero within ~50ms, cutting the rep's measured trajectory short. No app update required - firmware-only fix."
 }
