@@ -1,5 +1,5 @@
 {
-  "version": "3.11.0",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.0_OTA.zip",
-  "notes": "Major update: velocity tracking rebuilt around measured drift correction instead of zeroing on stillness. Reps are reported live and then automatically refined as the correction completes, and the live graph updates in place once a segment is corrected. Requires app v3.11.0 or later - the Bluetooth protocol changed."
+  "version": "3.11.1",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.1_OTA.zip",
+  "notes": "Fixes the live velocity graph showing a small non-zero, non-decaying reading while the sensor was genuinely at rest (residual bias drift never got shown back down to zero). Firmware-only fix, no app update needed."
 }
