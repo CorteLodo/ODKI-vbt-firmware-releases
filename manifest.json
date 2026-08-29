@@ -1,5 +1,5 @@
 {
-  "version": "3.11.1",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.1_OTA.zip",
-  "notes": "Fixes the live velocity graph showing a small non-zero, non-decaying reading while the sensor was genuinely at rest (residual bias drift never got shown back down to zero). Firmware-only fix, no app update needed."
+  "version": "3.11.2",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.2_OTA.zip",
+  "notes": "Goes further than 3.11.1: the measurement reference itself (not just the live display) now stays continuously aligned while the sensor is genuinely at rest, so a long pause no longer leaves the next rep's correction starting from a stale zero point. Firmware-only fix, no app update needed."
 }
