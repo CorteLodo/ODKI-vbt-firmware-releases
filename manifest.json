@@ -1,5 +1,5 @@
 {
-  "version": "3.10.5",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.5_OTA.zip",
-  "notes": "Fixes velocity being zeroed too early on explosive reps (deadlifts especially) - a real residual velocity right after the peak (the natural coast to lockout) could get wiped to zero within ~50ms, cutting the rep's measured trajectory short. No app update required - firmware-only fix."
+  "version": "3.10.6",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.10.6_OTA.zip",
+  "notes": "Reduces velocity drift on continuous sets: the gyroscope's bias re-estimation was updating during brief low-rotation moments mid-motion, not just true rest, slowly corrupting orientation over a session. It now requires a longer, separate confirmed-quiet window before updating. No app update required - firmware-only fix."
 }
