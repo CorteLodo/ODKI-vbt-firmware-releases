@@ -1,5 +1,5 @@
 {
-  "version": "3.11.6",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.6_OTA.zip",
-  "notes": "Fixes garbage battery percentage (sometimes >200% or 0%) shown right after connecting - the sensor now sends a real reading immediately at boot instead of leaving the Bluetooth battery value uninitialized for the first 30 seconds. App update recommended: settings menu simplified (removed the rarely-used Bias/Orientation section, moved Max plausible velocity into Phase Detection)."
+  "version": "3.11.7",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.7_OTA.zip",
+  "notes": "Debug log improvement only (relevant if you capture raw sessions for analysis): adds a per-bracket log line and extra per-sample fields so the drift-corrected curve can be reconstructed offline from the log. No behavior change, no app update needed."
 }
