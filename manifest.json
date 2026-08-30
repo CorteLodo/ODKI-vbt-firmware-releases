@@ -1,5 +1,5 @@
 {
-  "version": "3.11.9",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.9_OTA.zip",
-  "notes": "Fixes two rep-detection bugs found on real captures: meanVelocity/meanAcceleration/quality1 silently reporting 0 past a certain rep, and rep counting permanently stalling on sets with no real pause between reps - both triggered once accumulated raw drift grew large enough. Also adds a configurable anti-shock filter so briefly setting the bar down (touch-and-go) no longer corrupts the velocity reading for that rep. Update the companion app too - it adds the new anti-shock threshold to Settings."
+  "version": "3.11.10",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.10_OTA.zip",
+  "notes": "Removes the anti-shock filter added in 3.11.9: real-world testing showed it can make drift worse (not better) during continuous or rapid alternating shaking, instead of just an isolated touch-and-go. If you already updated to 3.11.9, update again to 3.11.10 to remove it. Update the companion app too - it removes the anti-shock threshold from Settings."
 }
