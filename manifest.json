@@ -1,5 +1,5 @@
 {
-  "version": "3.11.7",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.7_OTA.zip",
-  "notes": "Debug log improvement only (relevant if you capture raw sessions for analysis): adds a per-bracket log line and extra per-sample fields so the drift-corrected curve can be reconstructed offline from the log. No behavior change, no app update needed."
+  "version": "3.11.9",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.9_OTA.zip",
+  "notes": "Fixes two rep-detection bugs found on real captures: meanVelocity/meanAcceleration/quality1 silently reporting 0 past a certain rep, and rep counting permanently stalling on sets with no real pause between reps - both triggered once accumulated raw drift grew large enough. Also adds a configurable anti-shock filter so briefly setting the bar down (touch-and-go) no longer corrupts the velocity reading for that rep. Update the companion app too - it adds the new anti-shock threshold to Settings."
 }
