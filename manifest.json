@@ -1,5 +1,5 @@
 {
-  "version": "3.11.4",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.4_OTA.zip",
-  "notes": "Raises the flat-guard velocity ceiling default from 0.14 to 0.20 m/s. No app update needed."
+  "version": "3.11.5",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.5_OTA.zip",
+  "notes": "Fixes a rare stall where drift correction could stop applying mid-recording even with the sensor at rest, if the correction estimate itself had drifted (e.g. after a long touch-and-go set with no true pause) - a safety net now forces resync from raw sensor stillness alone. Also raises the flat-guard velocity ceiling default to 0.20 m/s. Requires app v3.11.5 or later - the Bluetooth Config packet changed size."
 }
