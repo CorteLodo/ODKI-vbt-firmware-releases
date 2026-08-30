@@ -1,5 +1,5 @@
 {
-  "version": "3.11.5",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.5_OTA.zip",
-  "notes": "Fixes a rare stall where drift correction could stop applying mid-recording even with the sensor at rest, if the correction estimate itself had drifted (e.g. after a long touch-and-go set with no true pause) - a safety net now forces resync from raw sensor stillness alone. Also raises the flat-guard velocity ceiling default to 0.20 m/s. Requires app v3.11.5 or later - the Bluetooth Config packet changed size."
+  "version": "3.11.6",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.6_OTA.zip",
+  "notes": "Fixes garbage battery percentage (sometimes >200% or 0%) shown right after connecting - the sensor now sends a real reading immediately at boot instead of leaving the Bluetooth battery value uninitialized for the first 30 seconds. App update recommended: settings menu simplified (removed the rarely-used Bias/Orientation section, moved Max plausible velocity into Phase Detection)."
 }
