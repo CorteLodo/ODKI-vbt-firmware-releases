@@ -1,5 +1,5 @@
 {
   "version": "3.11.15",
   "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.15_OTA.zip",
-  "notes": "Velocity sometimes failed to reset to zero after stopping, even when clearly still — the live graph could stay stuck ("provisional", sometimes slightly below zero) for a long and unpredictable time before correcting. This is now fixed; the reset should trigger reliably and promptly when you stop moving."
+  "notes": "Velocity sometimes failed to reset to zero after stopping, even when clearly still - the live graph could stay stuck (provisional, sometimes slightly below zero) for a long and unpredictable time before correcting. This is now fixed; the reset should trigger reliably and promptly when you stop moving."
 }
