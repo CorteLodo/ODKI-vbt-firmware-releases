@@ -1,5 +1,5 @@
 {
-  "version": "3.11.10",
-  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.10_OTA.zip",
-  "notes": "Removes the anti-shock filter added in 3.11.9: real-world testing showed it can make drift worse (not better) during continuous or rapid alternating shaking, instead of just an isolated touch-and-go. If you already updated to 3.11.9, update again to 3.11.10 to remove it. Update the companion app too - it removes the anti-shock threshold from Settings."
+  "version": "3.11.15",
+  "url": "https://raw.githubusercontent.com/CorteLodo/ODKI-vbt-firmware-releases/main/vbt_firmware_3.11.15_OTA.zip",
+  "notes": "Velocity sometimes failed to reset to zero after stopping, even when clearly still — the live graph could stay stuck ("provisional", sometimes slightly below zero) for a long and unpredictable time before correcting. This is now fixed; the reset should trigger reliably and promptly when you stop moving."
 }
